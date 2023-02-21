@@ -60,7 +60,6 @@ import {
                     diam. Eros in cursus turpis massa tincidunt.
                   </TabPanel>
                   <TabPanel>
-                    {/* You can add your content here. */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Elementum curabitur vitae nunc sed velit dignissim sodales ut
