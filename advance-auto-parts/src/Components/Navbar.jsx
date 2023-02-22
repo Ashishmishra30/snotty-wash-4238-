@@ -27,11 +27,11 @@ function Navbar() {
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearchSubmit = () => {
-    // Handle search submission
+   
   };
 
   const handleCartClick = () => {
-    // Handle cart click
+   
   };
 
   return (
