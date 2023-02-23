@@ -1,22 +1,3 @@
-// import React from 'react';
-// import { Box, Flex } from '@chakra-ui/react'
-// import NavInput from './NavComponent/NavInput';
-
-//  const Navbar = () => {
-//   return (
-//     <>
-//     <Box w="100%">
-//       <Flex>
-//         <img style={{width:"150px",height:"70px"}} src="https://i.postimg.cc/43ycxZxH/AutoMads.png" />
-//      <NavInput/>
-//       </Flex>
-//     </Box>
-//     </>
-//   )
-// }
-
-// export default Navbar;
-
 import { useState } from 'react';
 import { Flex, Image, Input, Button, IconButton, Tooltip, useDisclosure } from '@chakra-ui/react';
 import { FaSearch, FaCar, FaRegUser, FaShoppingCart, FaLocationArrow } from 'react-icons/fa';
@@ -35,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <Flex align="center" justify="space-between" h="80px">
+    <Flex align="center" justify="space-between" h="80px" position="fixed" bg="#373737">
       <Flex align="center">
         <Image src="https://i.postimg.cc/43ycxZxH/AutoMads.png" alt="Logo" w={200} h="70px" mr={4} />
         <Button onClick={handleSearchSubmit} leftIcon={<FaCar />} colorScheme="orange" h="60px">Add a New Vehicle</Button>
