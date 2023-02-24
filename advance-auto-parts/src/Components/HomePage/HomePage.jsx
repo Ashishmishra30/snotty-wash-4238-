@@ -1,16 +1,26 @@
-import React from 'react';
+import './HomePage.css';
 import { Box, Flex, Text, Button, Image, Input, Grid } from '@chakra-ui/react';
 import { FaCar } from 'react-icons/fa';
-import './HomePage.css';
+import { Link, Navigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const HomePage = () => {
+    const [redirect, setRedirect] = useState(false);
+
+    function handleClick() {
+        setRedirect(true);
+    }
+
     return (
         <div>
             <Flex mt={5} width="98%" ml={5} >
                 <Box bg="white" borderTopLeftRadius="50px" pl={5}>
                     <Text fontSize={40} mt={85} fontWeight="bold" >Save 15% Instantly</Text>
                     <Text fontSize={20} fontWeight="bold">When you buy any set of Carquest Brake Pads and 2 Carquest Brake Rotors.</Text>
-                    <Button mt={8} colorScheme="orange">Shop Now</Button>
+                    {redirect && <Navigate to="/products" />}
+                    <Link to="/products">
+                        <Button mt={8} colorScheme="orange" onClick={handleClick}>Shop Now</Button>
+                    </Link>
                 </Box>
                 <Image src="https://shop.advanceautoparts.com/wcsstore/CVWEB/Attachment/staticbusinesscontent/image/2023/02/home-brakes-hero.png" />
             </Flex>

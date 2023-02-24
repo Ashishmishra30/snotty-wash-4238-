@@ -16,7 +16,8 @@ function Navbar() {
   };
 
   return (
-    <Flex align="center" justify="space-between" h="80px" position="fixed" bg="#373737">
+    // position="fixed" use this inside flex
+    <Flex align="center" justify="space-between" h="80px" bg="#373737">
       <Flex align="center">
         <Image src="https://i.postimg.cc/43ycxZxH/AutoMads.png" alt="Logo" w={200} h="70px" mr={4} />
         <Button onClick={handleSearchSubmit} leftIcon={<FaCar />} colorScheme="orange" h="60px">Add a New Vehicle</Button>

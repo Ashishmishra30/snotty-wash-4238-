@@ -1,9 +1,10 @@
-import { Flex, Box, Link, Text, Spacer, Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
+import { Flex, Box, Link, Text, Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import {FaBars} from "react-icons/fa";
 
 function NavigationMenu() {
     return (
+
         <Flex bg="white" p={4}>
             <Box>
                 <Menu>
@@ -27,22 +28,25 @@ function NavigationMenu() {
                     </MenuList>
                 </Menu>
             </Box>
-            <Link  style={{textDecoration: 'none'}} to="/order-lookup" mr={4} mt={1} ml={2}>
+            <Link  style={{textDecoration: 'none'}} mr={4} mt={1} ml={2}>
+                <Text fontSize="lg" color="#898382">All Products |</Text>
+            </Link>
+            <Link  style={{textDecoration: 'none'}}  mr={4} mt={1} ml={2}>
                 <Text fontSize="lg" color="#898382">Replacement Parts  |</Text>
             </Link>
-            <Link style={{textDecoration: 'none'}} to="/order-lookup" mt={1}  mr={4}>
+            <Link style={{textDecoration: 'none'}}  mt={1}  mr={4}>
                 <Text fontSize="lg" color="#898382">Performance Parts  |</Text>
             </Link>
-            <Link  style={{textDecoration: 'none'}} to="/order-lookup" mt={1} mr={4}>
+            <Link  style={{textDecoration: 'none'}} mt={1} mr={4}>
                 <Text fontSize="lg" color="#898382">Accessories  |</Text>
             </Link>
-            <Link style={{textDecoration: 'none'}} to="/order-lookup" mt={1} mr={4}>
+            <Link style={{textDecoration: 'none'}}  mt={1} mr={4}>
                 <Text fontSize="lg" color="#898382">Oil & Fluids  |</Text>
             </Link>
-            <Link style={{textDecoration: 'none'}} to="/order-lookup" mt={1} mr={4} >
+            <Link style={{textDecoration: 'none'}}  mt={1} mr={4} >
                 <Text fontSize="lg" color="red">Special Offers  |</Text>
             </Link>
-            <Link style={{textDecoration: 'none'}} to="/order-lookup" mt={1} mr={4}>
+            <Link style={{textDecoration: 'none'}}  mt={1} mr={4}>
                 <Text fontSize="lg" color="#898382">Order Lookup  |</Text>
             </Link>
         </Flex>
