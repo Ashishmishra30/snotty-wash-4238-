@@ -4,3 +4,35 @@
     transform: scale(1.05);
 }
 
+.top-products{
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.top-products:hover{
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.serviceCards{
+    background-color:#1e1e1e;
+    color:white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.serviceCards:hover{
+    transform: scale(1.04);
+}
+
+.image-hover:hover{
+    cursor: pointer;
+    transform: scale(1.005);
+}
+
+.cards:hover{
+    cursor: pointer;
+    transform: scale(1.005);
+}
