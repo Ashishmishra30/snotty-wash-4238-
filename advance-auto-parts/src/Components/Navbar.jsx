@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Flex, Image, Input, Button, IconButton, Tooltip, useDisclosure } from '@chakra-ui/react';
 import { FaSearch, FaCar, FaRegUser, FaShoppingCart, FaLocationArrow } from 'react-icons/fa';
 import LoginModal from './LoginModal';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,8 +20,12 @@ function Navbar() {
     // position="fixed" use this inside flex
     <Flex align="center" justify="space-between" h="80px" bg="#373737">
       <Flex align="center">
+        <Link to="/">
         <Image src="https://i.postimg.cc/43ycxZxH/AutoMads.png" alt="Logo" w={200} h="70px" mr={4} />
-        <Button onClick={handleSearchSubmit} leftIcon={<FaCar />} colorScheme="orange" h="60px">Add a New Vehicle</Button>
+        </Link>
+        <Link to="/products">
+        <Button onClick={handleSearchSubmit} leftIcon={<FaCar />} colorScheme="orange" h="60px">ALL PRODUCTS</Button>
+        </Link>
         <Input value={searchValue} onChange={(e) => setSearchValue(e.target.value)} placeholder="Search" bg="white" w={600} h="60px" />
         <Button onClick={handleSearchSubmit} leftIcon={<FaSearch />} colorScheme="orange" h="60px" />
       </Flex>

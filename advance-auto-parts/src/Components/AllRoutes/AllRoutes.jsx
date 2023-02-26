@@ -9,7 +9,6 @@ export const AllRoutes = () => {
         <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/products' element={<ProductPage/>}></Route>
-
         </Routes>
 
     </div>
