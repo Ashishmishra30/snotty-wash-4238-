@@ -28,7 +28,7 @@ function NavigationMenu() {
                     </MenuList>
                 </Menu>
             </Box>
-            <Link  style={{textDecoration: 'none'}} mr={4} mt={1} ml={2}>
+            <Link to="/products"  style={{textDecoration: 'none'}} mr={4} mt={1} ml={2}>
                 <Text fontSize="lg" color="#898382">All Products |</Text>
             </Link>
             <Link  style={{textDecoration: 'none'}}  mr={4} mt={1} ml={2}>
